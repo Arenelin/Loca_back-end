@@ -28,3 +28,7 @@ func OpenDatabaseConnection() {
 		fmt.Println("🚀🚀🚀---Database connection successful---🚀🚀🚀")
 	}
 }
+
+func AutoMigrateModels() {
+	Database.AutoMigrate(&User{})
+}
